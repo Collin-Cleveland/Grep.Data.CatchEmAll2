@@ -1,37 +1,71 @@
 # Part 1
 ### a)
-grep "blas" forest/filescan_00.1
-grep "butt" forest/filescan_00.1
-grep "beed" forest/filescan_00.1
-grep "bulb" forest/filescan_00.1
+grep "blas" forest/filescan_00.1 > captured/blastoise.txt
+grep "butt" forest/filescan_00.1 > captured/butterfree.txt
+grep "beed" forest/filescan_00.1 > captured/beedrill.txt
+grep "bulb" forest/filescan_00.1 > captured/bulbasaur.txt
+grep "zard" forest/filescan_00.2 > captured/chaizard.txt
+grep "leon" forest/filescan_00.2 > captured/charmeleon.txt
+grep "nder" forest/filescan_00.2 > captured/charmander.txt
+grep "pika" forest/filescan_00.3 > captured/pikachu.txt
+grep "jigg" forest/filescan_00.3 > captured/jigglypuff.txt
+grep "meow" forest/filescan_00.3 > captured/meowth.txt
+grep "ivys" forest/filescan_00.3 > captured/ivysaur.txt
+grep "wart" forest/filescan_00.4 > captured/wartortole.txt
+grep "psyd" forest/filescan_00.4 > captured/psyduck.txt
+grep "squi" forest/filescan_00.4 > captured/squirtle.txt
+grep "venu" forest/filescan_00.4 > captured/venusaur.txt
 
 ### b)
-grep "zard" forest/filescan_00.2
-grep "leon" forest/filescan_00.2
-grep "nder" forest/filescan_00.2
+blastoise.txt
+butterfree.txt
+beedrill.txt
+bulbasaur.txt
+chaizard.txt
+charmeleon.txt
+charmander.txt
+pikachu.txt
+jigglypuff.txt
+meowth.txt
+ivysaur.txt
+wartortole.txt
+psyduck.txt
+squirtle.txt
+venusaur.txt
 
 ### c)
-grep "pika" forest/filescan_00.3
-grep "jigg" forest/filescan_00.3
-grep "meow" forest/filescan_00.3
-grep "ivys" forest/filescan_00.3
+>>>filescan_00.1
+blastoise.txt
+butterfree.txt
+beedrill.txt
+bulbasaur.txt
+
+>>>filescan_00.2
+chaizard.txt
+charmeleon.txt
+charmander.txt
+
+>>>filescan_00.3
+pikachu.txt
+jigglypuff.txt
+meowth.txt
+ivysaur.txt
 
 ### d)
-grep "wart" forest/filescan_00.4
-grep "psyd" forest/filescan_00.4
-grep "squi" forest/filescan_00.4
-grep "venu" forest/filescan_00.4
+>>>filescan_00.4
+wartortole.txt
+psyduck.txt
+squirtle.txt
+venusaur.txt
 
 # Part 2
 ### a)
-
-
-
-
-
+ls captured/*.txt | wc -l
+//answer 15 pokemon after deleting the instruction file that was initially in the package
 
 ### b)
-
+find captured/ -type f -exec wc -l {} + | sort -rn
+//sorts all files in captured and returns them in a sorted list by number of line showing the top 3 as Pikachu, Charizard and Beedrill as the largest with 40 lines
 
 
 
