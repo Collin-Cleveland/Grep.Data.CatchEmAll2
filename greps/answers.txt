@@ -4,23 +4,23 @@ grep "blas" forest/filescan_00.1
 grep "butt" forest/filescan_00.1
 grep "beed" forest/filescan_00.1
 grep "bulb" forest/filescan_00.1
+
 ### b)
-
-
+grep "zard" forest/filescan_00.2
+grep "leon" forest/filescan_00.2
+grep "nder" forest/filescan_00.2
 
 ### c)
+grep "pika" forest/filescan_00.3
+grep "jigg" forest/filescan_00.3
+grep "meow" forest/filescan_00.3
+grep "ivys" forest/filescan_00.3
 
-
-
-
-
-
-
-
-
-
-
-
+### d)
+grep "wart" forest/filescan_00.4
+grep "psyd" forest/filescan_00.4
+grep "squi" forest/filescan_00.4
+grep "venu" forest/filescan_00.4
 
 # Part 2
 ### a)
